@@ -1,0 +1,8 @@
+<ng-template appDialog></ng-template>
+<p>amiibo works!</p>
+
+<div *ngFor="let amiibo of amiibos$ | async">
+  <button type="button" class="btn btn-primary" (click)="onAmiiboClick(amiibo)">
+    {{amiibo.name}}
+  </button>
+</div>
